@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,18 +7,91 @@
   </head>
 
   <body>
-    <h1>Pablo Torres</h1>
-    <p>Esta es mi primera pagina</p>
-    <h2>Sobre Mi</h2>
+    <header>
+      <h1>Bienvenidos...</h1>
+      <h2><b>Mi nombre es:</b> Geovanni Zuniga</h2>
+    </header>
+    <section>
+      <table>
+        <thead>
+          <tr>
+            <th>Elemento</th>
+            <th>Descripcion</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Aside</td>
+            <td>
+              <p>
+                Un contenedor secundario para añadir contenido adicional como
+                una barra lateral.
+              </p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Figure
+            </td>
+            <td>
+              Contenedor utilizado para mostrar imagenes, graficos, etc.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
 
-    <p>Soy estudiante de la carrera de Computacion de quinto ciclo</p>
-
-    <h2>Enlaces</h2>
-
-    <ul>
-        <li>
-            <a href="https://github.com/nnyez">MI GITHUB</a>
-        </li>
-    </ul>
+    <section class="center-cont">
+      <aside>
+        <h2>*Aside*</h2>
+        <h3>En construccion... </h3>
+        <p>Proximamente una navegacion para cada repositorio.</p>
+      </aside>
+      <figure>
+        <h2>*Figure*</h2>
+        <img class="fix-img" src="./santa.png" alt="imagen de santa">
+      </figure>
+    </section>
+    <footer>
+      <h3><b>Autor: </b>Geovanni Zuniga</h3>
+      <h3><b>Asignatura: </b>Programacion y Plataformas Web</h3>
+    </footer>
   </body>
 </html>
+
+<style>
+  h3 b{
+    font-weight: 600;
+
+  }
+h2,h3 {
+  font-weight: 300;
+}
+h2 b {
+  font-weight: 600;
+}
+
+  body {
+    text-align: center;
+  }
+  header {
+    padding: 20px;
+    margin: 0;
+  }
+  .center-cont{
+    display: flex;
+  }
+  .fix-img{
+    width: 20em;
+
+  }
+aside{
+  
+}
+  footer {
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+</style>
