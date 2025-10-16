@@ -3,95 +3,78 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./global.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
     <title>Document</title>
   </head>
 
   <body>
     <header>
-      <h1>Bienvenidos...</h1>
-      <h2><b>Mi nombre es:</b> Geovanni Zuniga</h2>
+      <h1 id="title">Bienvenido a mi pagina Web</h1>
+      <div class="flex-content column-text">
+        <h2>Mi nombre es Geovanni Zuniga</h2>
+        <h2>Practica con estandares Web</h2>
+      </div>
     </header>
-    <section>
-      <table>
-        <thead>
-          <tr>
-            <th>Elemento</th>
-            <th>Descripcion</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Aside</td>
-            <td>
-              <p>
-                Un contenedor secundario para añadir contenido adicional como
-                una barra lateral.
-              </p>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              Figure
-            </td>
-            <td>
-              Contenedor utilizado para mostrar imagenes, graficos, etc.
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+    <div>
+      <div id="center-content">
+        <section class="content">
+          <h2>Etiquetas investigadas</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Descripcion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Aside</td>
+                <td>
+                  Un contenedor secundario para añadir contenido adicional como
+                  una barra lateral.
+                </td>
+              </tr>
+              <tr>
+                <td>Figure</td>
+                <td>
+                  Contenedor utilizado para mostrar imagenes, graficos, etc.
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
 
-    <section class="center-cont">
-      <aside>
-        <h2>*Aside*</h2>
-        <h3>En construccion... </h3>
-        <p>Proximamente una navegacion para cada repositorio.</p>
-      </aside>
-      <figure>
-        <h2>*Figure*</h2>
-        <img class="fix-img" src="./santa.png" alt="imagen de santa">
-      </figure>
-    </section>
+        <section class="content">
+          <h2>Ejemplos de uso de las etiquetas</h2>
+          <div class="flex-content">
+            <aside id="navigation-panel">
+              <h2>*Aside*</h2>
+              <h3>En construccion...</h3>
+              <p>Proximamente una navegacion para cada repositorio.</p>
+            </aside>
+            <div class="flex-column-content">
+              <h2>*Figure*</h2>
+              <figure>
+                <img id="santa-img" src="./santa.png" alt="imagen de santa" />
+              </figure>
+              <button id="btnNavidad">Navidad</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
     <footer>
-      <h3><b>Autor: </b>Geovanni Zuniga</h3>
-      <h3><b>Asignatura: </b>Programacion y Plataformas Web</h3>
+      <h3>Autor: Geovanni Zuniga</h3>
+      <h3>Asignatura: Programacion y Plataformas Web</h3>
     </footer>
+    <script src="./global.js"></script>
   </body>
 </html>
-
-<style>
-  h3 b{
-    font-weight: 600;
-
-  }
-h2,h3 {
-  font-weight: 300;
-}
-h2 b {
-  font-weight: 600;
-}
-
-  body {
-    text-align: center;
-  }
-  header {
-    padding: 20px;
-    margin: 0;
-  }
-  .center-cont{
-    display: flex;
-  }
-  .fix-img{
-    width: 20em;
-
-  }
-aside{
-  
-}
-  footer {
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-  }
-</style>
