@@ -3,19 +3,20 @@ body {
   font-family: "roboto", sans-serif;
 }
 
-header, footer {
+header,
+footer {
   padding: 2rem;
   text-align: center;
   background-color: #062726;
   color: #a06cd5;
 }
-header{
+
+header {
   border-bottom: 0.3rem dashed #6cd4ff;
-
 }
-footer{
-  border-top: 0.3rem dashed #6cd4ff;
 
+footer {
+  border-top: 0.3rem dashed #6cd4ff;
 }
 
 h1,
@@ -25,25 +26,37 @@ h3 {
   padding-left: 1rem;
 }
 
-.column-text{
-    color: white;
-    justify-content: space-between;
-    font-size: 0.5rem;
-}
-
 table {
   margin: 1rem;
-  color: #E2CFEA;
+  color: #e2cfea;
 }
+
 thead {
   font-family: "montserrat";
   font-size: 1.2rem;
 }
+
 td,
 th {
   border: 0.1rem solid #6cd4ff;
   padding: 0.5rem;
   font-size: 1.1rem;
+}
+
+aside {
+  height: 40rem;
+  width: 30%;
+  padding: 1rem;
+  background-color: #062726;
+  color: #e2cfea;
+  border: 0.3rem dashed #6cd4ff;
+}
+
+/* CLASES*/
+.column-text {
+  color: white;
+  justify-content: space-between;
+  font-size: 0.5rem;
 }
 
 .content {
@@ -54,48 +67,44 @@ th {
   border: 0.2rem solid #6cd4ff;
 }
 
-.content h1,h2{
-    color: white;
-    margin: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 0.2rem solid ;
+.content h1,
+h2 {
+  color: white;
+  margin: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 0.2rem solid;
 }
 
+.flex-content {
+  display: flex;
+}
+
+.flex-column-content {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+}
+
+.content button {
+  font-family: "roboto", sans-serif;
+  font-weight: bold;
+  border-radius: 1rem;
+  padding: 1rem;
+  background-color: #a06cd5;
+}
+
+.content button:hover {
+  background-color: #102b3f;
+  color: #e2cfea;
+}
+
+/*IDENTIFICADORES*/
 #center-content {
   padding: 1rem;
   background-color: #102b3f;
 }
-.flex-content{
-    display: flex;
-}
-.flex-column-content{
-    display: flex;
-    flex-direction: column;
-    padding: 3rem;
-}
+
 #santa-img {
   width: 15rem;
-  box-shadow: 0 4px 8px 0 #E2CFEA;
-}
-
-#navigation-panel {
-  height: 40rem;
-  width: 30%;
-  padding: 1rem;
-  background-color: #062726;
-  color: #e2cfea;
-  border: 0.3rem dashed #6cd4ff;
-}
-
-.content button{
-    font-family: "roboto", sans-serif;
-    font-weight: bold;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: #a06cd5;
-}
-
-.content button:hover{
-    background-color: #102b3f   ;
-    color: #E2CFEA;
+  box-shadow: 0 4px 8px 0 #e2cfea;
 }
