@@ -191,4 +191,4 @@ El archivo `global.js` incorpora dos acciones principales:
 
 ### Comparación
 
-![Resultadis](<./results.png>)
+![Resultados](<./results.png>)
